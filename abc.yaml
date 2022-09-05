@@ -1,6 +1,4 @@
-assumeRoleResult = AssumeRole(role-arn);
-tempCredentials = new SessionAWSCredentials(
-   assumeRoleResult.AccessKeyId, 
-   assumeRoleResult.SecretAccessKey, 
-   assumeRoleResult.SessionToken);
-s3Request = CreateAmazonS3Client(tempCredentials);
+SET AWS_ACCESS_KEY_ID=ASIAIOSFODNN7EXAMPLE
+SET AWS_SECRET_ACCESS_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+SET AWS_SESSION_TOKEN=AQoDYXdzEJr...<remainder of token> 
+aws ec2 describe-instances --region us-west-1
